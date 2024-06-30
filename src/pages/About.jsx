@@ -1,14 +1,26 @@
-import React from 'react'
+import React from "react";
+import panel from "/img-container/3-panels.png";
+
 import { PiPlantFill } from "react-icons/pi";
 import textImg from "/img-container/textImg.jpg";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
+import { ImPower } from "react-icons/im";
 
 function About() {
   return (
     <div className=" w-full h-full   flex lg:flex-row flex-col justify-center items-center bg-white py-20">
+      <div className="relative w-full block lg:hidden flex h-[60vh] justify-end  text-orange-500">
+        <ImPower size={400} />
+
+        <img
+          className="absolute w-32  lg:w-80 right-20 -top-10"
+          src={panel}
+          alt=""
+        />
+      </div>
       <div className="flex flex-col justify-center items-center gap-6 ">
         <div className="flex justify-center items-center text-orange-500 gap-2">
-          <PiPlantFill size={20} />
+          <PiPlantFill size={24} />
           <h1 className=" font-medium uppercase tracking-widest ">About Us</h1>
         </div>
 
@@ -41,7 +53,11 @@ function About() {
             />
 
             <div className="absolute rounded-lg  h-40 right-60 shadow-lg bottom-20 ">
-              <img className=" rounded-xl bottom-10 w-[80vw] lg:w-[25vw] relative" src={textImg} alt="" />
+              <img
+                className=" rounded-xl bottom-10 w-[80vw] lg:w-[25vw] relative"
+                src={textImg}
+                alt=""
+              />
 
               <div className="flex flex-col gap-3 absolute left-0 top-0 p-3">
                 <h1>Solar Energy</h1>
@@ -80,14 +96,16 @@ function About() {
           <div className="flex flex-col gap-4 items-center lg:items-en justify-center lg:w-[40vw] ">
             <h1 className="text-zinc-500 italic font-serif text-xl text-center lg:text-rigt leading-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              similique rem excepturi natus provident hpdoel deo demskl laudanti rcitationem quas
-              aliquam repellendus iure reprehenderit quam veritatis maiores,
-              perferendis adipisci ab iusto dolorem.
+              similique rem excepturi natus provident hpdoel deo demskl laudanti
+              rcitationem quas aliquam repellendus iure reprehenderit quam
+              veritatis maiores, perferendis adipisci ab iusto dolorem.
             </h1>
 
             <div className="  w-60 h-[2px] bg-[#47AF34]"></div>
 
-            <h1 className='font-bold text-3xl text-slate-800 lg:pt-10'>Sumesh kumar sahu</h1>
+            <h1 className="font-bold text-3xl text-slate-800 lg:pt-10">
+              Sumesh kumar sahu
+            </h1>
             <h1>Owner & CEO of Sanu Solar</h1>
           </div>
         </div>
@@ -96,4 +114,4 @@ function About() {
   );
 }
 
-export default About
+export default About;

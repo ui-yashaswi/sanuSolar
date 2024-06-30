@@ -61,8 +61,8 @@ function Home() {
             </div>
           </div>
 
-          <div className="mt-60 w-full flex lg:flex-row flex-col justify-between lg:items-start items-center lg:px-40 px-[20px] ">
-            <div className="flex w-full flex-col gap-10">
+          <div className="mt-60 w-full flex lg:flex-row flex-col justify-between  items-center lg:px-40 px-[20px] ">
+            <div className="flex w-full flex-col items-center justify-center lg:items-start  gap-10">
               <h1 className=" text-5xl  text-white font-bold leading-[70px] lg:text-left text-center ">
                 Renewable Energy Solutions that Deliver Financial Savings
               </h1>
@@ -71,17 +71,17 @@ function Home() {
                 Provide Solar Panels And Renewable Energy Products
               </h1>
 
-              <div className="flex gap-3  bg-orange-500 hover:bg-orange-800 text-white w-52 justify-center items-center py-3 rounded-full hover:border-2  hover:border-white text-xl ">
+              <div className="flex gap-3  bg-orange-500 hover:bg-orange-800 text-white w-64 justify-center items-center py-4 rounded-full hover:border-2  hover:border-white text-xl ">
                 <button className=" font-semibold ">Enquire Online </button>
                 <AiOutlineRightCircle size={30} />
               </div>
             </div>
 
-            <div className="relative w-full flex justify-end  text-orange-500">
-              <ImPower size={450} />
+            <div className="relative  w-full lg:flex hidden flex justify-end  text-orange-500">
+              <ImPower size={400} />
 
               <img
-                className="absolute w-80 right-10 top-3"
+                className="absolute w-80 right-20 -top-10"
                 src={panel}
                 alt=""
               />

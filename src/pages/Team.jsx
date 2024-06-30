@@ -4,7 +4,7 @@ import TeamCard from "../component/TeamCard";
 
 function Team() {
   return (
-    <div className="bg-slate-100 w-full h-full lg:px-40 px-[20px] flex flex-col justify-center items-center py-20">
+    <div className="bg-slate-800 w-full h-full lg:px-40 px-[20px] flex flex-col justify-center items-center py-20">
       <div className="flex justify-center items-center  text-orange-500 gap-2">
         <RiTeamFill size={20} />
         <h1 className=" font-medium uppercase tracking-widest ">Our Team</h1>
@@ -18,13 +18,10 @@ function Team() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
           labore.
         </h1>
-      </div> 
+      </div>
 
-      <div className="flex pt-20 lg:flex-row flex-col gap-20 lg:justify-between ">
+      <div className="flex pt-20 lg:flex-row flex-wrap flex-col gap-20 lg:justify-between ">
         <TeamCard />
-        <TeamCard />
-        <TeamCard />
-        
       </div>
     </div>
   );
